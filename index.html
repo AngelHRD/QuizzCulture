@@ -14,48 +14,51 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <div class="quiz">
-      <h1>Quizz Culture générale. ✔️</h1>
+    <div class="divQuiz">
+      <h1>Quizz Culture générale</h1>
       <form id="quiz-form">
-        <div class="question">
+        <div id="quiz1" class="quiz">
           <p>Qui est sacré empereur de France le 2 décembre 1804 ?</p>
-          <label><input type="radio" name="q1" id="Clo" value="Clovis" checked /> Clovis</label>
-          <label><input type="radio" name="q1" id="Abr" value="Abraham Lincoln" /> Abraham Lincoln</label>
-          <label><input type="radio" name="q1" id="Nap" value="Napoleon Bonaparte" /> Napoléon Bonaparte</label>
+          <label><input type="radio" name="Q1" value="a" /> Clovis</label>
+          <label><input type="radio" name="Q1" value="b" /> Abraham Lincoln</label>
+          <label><input type="radio" name="Q1" value="c" /> Napoléon Bonaparte</label>
         </div>
 
-        <div class="question">
+        <div id="quiz2" class="quiz">
           <p>Quand la déclaration d'indépendance des États-Unis a-t-elle été votée ?</p>
-          <label><input type="radio" name="q2" id="date1" value="4 juillet 1776" checked /> 4 juillet 1776</label>
-          <label><input type="radio" name="q2" id="date2" value="18 avril 1856" /> 18 avril 1856</label>
-          <label><input type="radio" name="q2" id="date3" value="30 juin 1925" /> 30 juin 1925</label>
+          <label><input type="radio" name="Q2" value="a" /> 4 juillet 1776</label>
+          <label><input type="radio" name="Q2" value="b" /> 18 avril 1856</label>
+          <label><input type="radio" name="Q2" value="c" /> 30 juin 1925</label>
         </div>
 
-        <div class="question">
+        <div id="quiz3" class="quiz">
           <p>Quand a eu lieu la chute de l'empire romain d'occident ?</p>
-          <label><input type="radio" name="q3" value="15 ap. J.-C." checked /> 15 ap. J.-C.</label>
-          <label><input type="radio" name="q3" value="476 ap. J.-C." /> 476 ap. J.-C.</label>
-          <label><input type="radio" name="q3" value="-740 av. J.-C." /> 740 av. J.-C.</label>
+          <label><input type="radio" name="Q3" value="a" /> 15 ap. J.-C.</label>
+          <label><input type="radio" name="Q3" value="b" /> 476 ap. J.-C.</label>
+          <label><input type="radio" name="Q3" value="c" /> 740 av. J.-C.</label>
         </div>
 
-        <div class="question">
+        <div id="quiz4" class="quiz">
           <p>Quelle est la capitale de la Slovénie ?</p>
-          <label><input type="radio" name="q4" value="Ljubljana" checked /> Ljubljana</label>
-          <label><input type="radio" name="q4" value="Belgrade" /> Belgrade</label>
-          <label><input type="radio" name="q4" value="Bratislava" /> Bratislava</label>
+          <label><input type="radio" name="Q4" value="a" /> Ljubljana</label>
+          <label><input type="radio" name="Q4" value="b" /> Belgrade</label>
+          <label><input type="radio" name="Q4" value="c" /> Bratislava</label>
         </div>
 
-        <div class="question">
+        <div id="quiz5" class="quiz">
           <p>Combien d'habitants compte l'Irlande en 2020 ?</p>
-          <label><input type="radio" name="q5" value="1.365 Millions" checked /> 1,365 Million</label>
-          <label><input type="radio" name="q5" value="2.1 Millions" /> 2.1 Millions</label>
-          <label><input type="radio" name="q5" value="4.9 Millions" /> 4.9 Millions</label>
+          <label><input type="radio" name="Q5" value="a" /> 1,365 Million</label>
+          <label><input type="radio" name="Q5" value="b" /> 2.1 Millions</label>
+          <label><input type="radio" name="Q5" value="c" /> 4.9 Millions</label>
         </div>
 
-        <button type="submit">VALIDER ✔️</button>
+        <button onclick="check()" type="button">Valider</button>
       </form>
 
-      <button type="submit" class="results">Cliquez sur valider pour voir les résultats.</button>
+      <div class="quiz-1">
+        <p id="results"></p>
+        <p class="pDivQuizz-1">Cliquez sur valider pour voir les résultats.</p>
+      </div>
     </div>
   </body>
 </html>

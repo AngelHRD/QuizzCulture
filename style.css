@@ -1,6 +1,4 @@
-*,
-::before,
-::after {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,25 +9,27 @@ body {
   font-family: Open sans, sans-serif;
   display: flex;
   justify-content: center;
-  background-color: rgb(201, 201, 201);
+  background-color: #f0f4f8;
 }
 
-.quiz {
+.divQuiz {
   text-align: center;
 }
 
 h1 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #4a90e2;
 }
 
-.question {
-  margin-bottom: 20px;
+.quiz {
+  margin-bottom: 10px;
   text-align: left;
   background: white;
   padding: 5px 0 5px 20px;
   border-radius: 10px;
   width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 p {
@@ -46,9 +46,31 @@ label {
 button {
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 1rem;
-  margin-top: 20px;
+  margin-top: 10px;
+  background-color: #4a90e2;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #013870;
+}
+
+.quiz-1 {
   background-color: white;
+  width: 600px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: normal;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pDivQuizz-1 {
+  color: #777;
+  font-weight: normal;
 }
