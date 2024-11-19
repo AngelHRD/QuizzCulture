@@ -59,7 +59,7 @@ button:hover {
   background-color: #013870;
 }
 
-.quiz-1 {
+.quiz-instructions {
   background-color: white;
   width: 600px;
   height: auto;
@@ -70,7 +70,7 @@ button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.pDivQuizz-1 {
+.pFeedback {
   color: #777;
   font-weight: normal;
 }
